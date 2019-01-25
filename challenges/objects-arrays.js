@@ -85,6 +85,9 @@ for(let i=0; i<graduates.length; i++){
 }
 universities.sort();
 
+// version with array methods:
+// const universities = graduates.map(graduate => graduate.university).sort();
+
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
@@ -99,6 +102,9 @@ for(let i=0; i<graduates.length; i++){
   contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`);
 }
 
+// version with array methods:
+// const contactInfo = graduates.map(graduate => `${graduate.first_name} ${graduate.email}`);
+
 console.log(contactInfo);
 
 
@@ -108,6 +114,10 @@ const uni = [];
 for(let i=0; i<graduates.length; i++){
   if(graduates[i].university.includes("Uni")) uni.push(graduates[i].university);
 }
+
+// two versions with array methods:
+// const uni = graduates.map(graduate => graduate.university).filter(elem => elem.indexOf("Uni") !== -1);
+// const uni = graduates.map(graduate => graduate.university).filter(elem => elem.includes("Uni"));
 
 console.log(uni);
 
