@@ -41,21 +41,22 @@ In JavaScript, function is an object. Method is the function associated with an 
 In general, closure is an inner function that has an access to the enclosing (outer) function's scope.
 
 Closure has an access to three scope chains:
-a) its own scope
-b) outer function’s scope
-c) global scope
+* its own scope
+* outer function’s scope
+* global scope
 
 4. Describe the four rules of the 'this' keyword.
 
 Based on the order of interpreter evaluation:
-a) New binding - binds to the newly created object returned by constructor, i.e. variable = new Object();
-b) Explicit binding  - binds to the explicitly defined object passed to the call or apply function.
-c) Implicit binding - binds to the object that it's being called on, i.e. object.method();
-d) Window binding - called in the global scope. If strict mode is enabled, return undefined - otherwise, return the global object (i.e. window)
+* New binding - binds to the newly created object returned by constructor, i.e. variable = new Object();
+* Explicit binding  - binds to the explicitly defined object passed to the call or apply function.
+* Implicit binding - binds to the object that it's being called on, i.e. object.method();
+* Window binding - called in the global scope. If strict mode is enabled, return undefined - otherwise, return the global object (i.e. window)
 
 5. Why do we need super() in an extended class?
 
-`super()` calls the constructor of the upper (base) class in the inheritance chain.
+`super()` calls the constructor(s) of the upper ("base") class(es) in the inheritance chain.
+
 It's being used to make sure the object being an extension of the class upper in the inheritance chain is being properly created.
 
 ## Project Set up
