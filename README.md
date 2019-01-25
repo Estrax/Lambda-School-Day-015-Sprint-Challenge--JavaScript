@@ -30,6 +30,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+They both invoke a callback on each element of the collection. However, `.map` returns a collection and `.forEach` returns `undefined`.
+
 2. What is the difference between a function and a method?
 
 3. What is closure?
